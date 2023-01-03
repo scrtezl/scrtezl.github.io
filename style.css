@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#kutu{
+    width: 1000px;
+    
+    margin: 0 auto;
+}
+#logo{
+    width: 20%;
+    height: 150px;
+    float: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#menu{
+    width: 80%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 500;
+    font-size: 25px;
+    color: aqua;
+    
+}
+#menu li{
+    list-style-type: none;
+}
+menu a{
+    text-decoration: none;
+    color: brown;
+}
+#menu a:hover{
+    color: chocolate;
+
+}
+#birinci{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+    color: brown;
+}
+#ikinci{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.kare{
+    border: 1px solid rgb(252, 250, 248);
+    background-color: rgb(243, 243, 242);
+    width: 250px;
+    height: 235px;
+}
+#menu a{
+    text-decoration: none;
+    color: black;
+}
+#ucuncu li{
+    height: 50px;
+    color: brown;
+   
+
+}
+#ucuncu li a{
+    text-decoration: none;
+    color: brown;
+}
+#dorduncu{
+  font-size: 20px;
+    color: chocolate;
+    display: flex;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+}
+body{
+    background-image: url(res/images.jpg);
+    background-size: cover;
+}
+#birinci h1{
+    font-style: oblique;
+    font-size: 4em;
+}
