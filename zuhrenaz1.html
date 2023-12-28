@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="menu">
+        <li><i class="fa-solid fa-house"></i><a href="index.html">Anasayfa</a></li>
+
+    </div>
+    <div id="container">
+        <div class="kutu1">
+            <table>
+                <tr>
+                    <td>Adınız:</td>
+                    <td><input type="text" name="" id="ad"></td>
+                </tr>
+                <tr>
+                    <td>Soyadınız:</td>
+                    <td><input type="text" name="" id="soyad"></td>
+                </tr>
+            </table> 
+            <input onclick="karsilama()" type="button" id="btn" value="Karşıla">
+            <p id="metin"></p>
+        </div>        
+        <br>   
+        <p>ORTALAMA HESAPLAMA</p>
+        <div class="kutu2">
+            Not1:
+            <input type="text" name="" id="not1"> <br>
+            Not2:
+            <input type="text" name="" id="not2"> <br>
+            <input onclick="hesap()" type="button" value="Hesapla">
+            <p id="ortalama">Ortalama</p>
+            <p id="durum">Durum</p>
+        </div> 
+        <br>
+        <p>Dairenin Alan/Çevre Hesabı</p>
+        <div class="kutu3">            
+            Yarıçap:<input type="text" name="" id="d1">    
+            <input type="button" onclick="daire()" value="B U L">
+            <p id="cevre"></p>
+            <p id="alan"></p>
+        </div>
+        <br>
+        <p>EHLİYET KONTROL</p>
+        <div class="kutu4">
+            <p>Ehliyet</p>
+            Doğum Yılını Gir:<input type="text" name="" id="dYili" >
+            <input type="button" onclick="yasBul()" value="Yaş Bul">
+            <p id="yas"></p>
+            <p id="ehliyet"></p>
+        </div>
+        <br>
+        <p align="center">NET HESAPLAMA</p>
+        <div class="kutu5">            
+            <div class="net">
+                <p>Türkçe</p>
+                Doğru Sayısı:<input type="text" class="inputText" id="turkceDogru"> <br>
+                Yanlış Sayısı:<input type="text" class="inputText" id="turkceYanlis"> <br>
+                <input type="button" onclick="tnetHesapla()" value="Net Bul">
+                <p id="turkceNet">...</p>
+            </div>
+            <div class="net">
+                <p>Matematik</p>
+                Doğru Sayısı:<input type="text" class="inputText" id="mDogru"> <br>
+                Yanlış Sayısı:<input type="text" class="inputText" id="mYanlis"> <br>
+                <input type="button" onclick="mnetHesapla()" value="Net Bul">
+                <p id="matNet">...</p>
+            </div>
+            <div class="net">
+                <p>Sosyal</p>
+                Doğru Sayısı:<input type="text" class="inputText" id="sDogru"> <br>
+                Yanlış Sayısı:<input type="text" class="inputText" id="sYanlis"> <br>
+                <input type="button" onclick="snetHesapla()" value="Net Bul">
+                <p id="sosNet">...</p>
+            </div>
+            <div class="net">
+                <p>Fen</p>
+                Doğru Sayısı:<input type="text" class="inputText" id="fDogru"> <br>
+                Yanlış Sayısı:<input type="text" class="inputText" id="fYanlis"> <br>
+                <input type="button" onclick="fnetHesapla()" value="Net Bul">
+                <p id="fenNet">...</p>
+            </div>
+            
+        </div>
+        <p>Sınava Kalan Gün</p>
+        <div class="kutu6">
+            
+            <input type="button" onclick="tarihGetir()" value="Tarih Getir">
+            <p id="tarih"></p>
+        </div>
+        <p>Vücut Kilo İndeksi</p>
+        <div class="kutu7">
+            Boy: <input type="text" name="" id="Boy"> <br>
+            Kilo: <input type="text" name="" id="Kilo"><br>
+            <input type="button" onclick="vki()" value="Hesapla" ><br>
+            <p id="Hesap"></p>
+            <p id="vkidurum">..</p>
+           
+        </div>
+    </div>
+    
+    
+</body>
+
+</html>
