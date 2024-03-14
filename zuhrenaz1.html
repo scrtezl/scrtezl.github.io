@@ -13,12 +13,7 @@
     
     <script type="text/javascript">
         
-        /***********************************************
-        * Dynamic Countdown script- © Dynamic Drive (http://www.dynamicdrive.com)
-        * This notice MUST stay intact for legal use
-        * Visit http://www.dynamicdrive.com/ for this script and 100s more.
-        ***********************************************/
-        
+    
         function cdtime(container, targetdate){
         if (!document.getElementById || !document.getElementById(container)) return
         this.container=document.getElementById(container)
@@ -73,18 +68,7 @@
         setTimeout(function(){thisobj.showresults()}, 1000) //update results every second
         }
         
-        /////CUSTOM FORMAT OUTPUT FUNCTIONS BELOW//////////////////////////////
-        
-        //Create your own custom format function to pass into cdtime.displaycountdown()
-        //Use arguments[0] to access "Days" left
-        //Use arguments[1] to access "Hours" left
-        //Use arguments[2] to access "Minutes" left
-        //Use arguments[3] to access "Seconds" left
-        
-        //The values of these arguments may change depending on the "baseunit" parameter of cdtime.displaycountdown()
-        //For example, if "baseunit" is set to "hours", arguments[0] becomes meaningless and contains "n/a"
-        //For example, if "baseunit" is set to "minutes", arguments[0] and arguments[1] become meaningless etc
-        
+    
         
         function formatresults(){
         if (this.timesup==false){//if target date/time not yet met
